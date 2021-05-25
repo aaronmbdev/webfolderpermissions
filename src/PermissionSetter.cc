@@ -12,7 +12,7 @@
 using namespace std;
 
 void setOwner() {
-    execlp("chown","chown","-r","www-data:www-data","/var/www/",NULL);
+    execlp("chown","chown","-R","www-data:www-data","/var/www/",NULL);
     cout << "Fallo al ejecutar thread de chown" << endl;
 }
 
